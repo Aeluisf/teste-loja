@@ -1,0 +1,14 @@
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.floating-cart a {
+    color: white;
+    font-size: 1.5em;
+}

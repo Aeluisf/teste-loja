@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Loja de Roupas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Produtos -->
+    <div class="container mt-5 pt-5">
+        <h2 class="text-center mb-4">Produtos</h2>
+        <div class="row">
+           <!-- Produto 1 -->
+            <div class="col-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/tenis_branco.jpg" class="card-img-top product-image" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 1</h5>
+                        <p class="card-text">Descrição do produto.</p>
+
+                        <label>Selecione a cor:</label>
+                        <select class="form-select mb-3 color-selector">
+                            <option value="img/tenis_vermelho.jpg">Vermelho</option>
+                            <option value="img/tenis_branco.jpg">Azul</option>
+                            <option value="img/tenis_preto.jpg">Preto</option>
+                        </select>
+
+                        <label>Tamanho:</label>
+                        <select class="form-select mb-3 size-selector">
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                        </select>
+
+                        <p><strong>Preço: R$50,00</strong></p>
+
+                        <button class="btn btn-success w-100 add-to-cart" data-price="50">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="col-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/tenis_branco.jpg" class="card-img-top product-image" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 2</h5>
+                        <p class="card-text">Descrição do produto.</p>
+
+                        <label>Selecione a cor:</label>
+                        <select class="form-select mb-3 color-selector">
+                            <option value="img/tenis_vermelho.jpg">Vermelho</option>
+                            <option value="img/tenis_branco.jpg">Azul</option>
+                            <option value="img/tenis_preto.jpg">Preto</option>
+                        </select>
+
+                        <label>Tamanho:</label>
+                        <select class="form-select mb-3 size-selector">
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                        </select>
+
+                        <p><strong>Preço: R$60,00</strong></p>
+
+                        <button class="btn btn-success w-100 add-to-cart" data-price="60">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrinho Flutuante -->
+    <div class="floating-cart">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
